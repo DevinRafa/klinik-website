@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Klinik Kesehatan Umum Terpadu - Layanan medis profesional, modern, dan terjangkau untuk Anda dan keluarga.">
+    <title>Klinik Kesehatan Umum | Terpadu & Profesional</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div id="loader" class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <a href="#main-content" class="sr-only">Skip to content</a>
+
+    <header role="banner">
+        <nav class="container" aria-label="Navigasi Utama">
+            <div class="logo">
+                <a href="#" aria-label="KlinikSehat Home">Klinik<span>Sehat</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#doctors">Dokter</a></li>
+                <li><a href="#registration">Pendaftaran</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#registration" class="btn btn-primary">Daftar Sekarang</a>
+            </div>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Buka menu navigasi" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="badge">Klinik Terakreditasi Paripurna</span>
+                    <h1>Solusi Kesehatan <span>Keluarga</span> Anda</h1>
+                    <p>Klinik Kesehatan Umum Terpadu dengan tenaga medis ahli dan teknologi terkini untuk pelayanan kesehatan terbaik.</p>
+                    <div class="hero-btns">
+                        <a href="#services" class="btn btn-primary">
+                            Jelajahi Layanan
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                        </a>
+                        <a href="#registration" class="btn btn-secondary">Cek Antrean</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="img-blob">
+                        <img src="https://images.unsplash.com/photo-1629909608115-f93f044922c1?auto=format&fit=crop&q=80&w=800" alt="Tim Medis Profesional">
+                    </div>
+                    <div class="floating-card c1">
+                        <div class="card-icon">⚡</div>
+                        <div>
+                            <strong>Layanan 24/7</strong>
+                            <p>Siap melayani</p>
+                        </div>
+                    </div>
+                    <div class="floating-card c2">
+                        <div class="card-icon">🩺</div>
+                        <div>
+                            <strong>Dokter Ahli</strong>
+                            <p>Tersertifikasi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Layanan Unggulan</h2>
+                    <p>Kami menyediakan berbagai poliklinik spesialis untuk menangani berbagai kebutuhan kesehatan Anda.</p>
+                    <div class="search-container">
+                        <input type="text" id="service-search" placeholder="Cari layanan (misal: Gigi, Anak)...">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    </div>
+                </div>
+                <div class="services-grid" id="services-grid">
+                    <article class="service-card" data-category="umum">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=400" alt="Poli Umum">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">💊</div>
+                            <h3>Poli Umum</h3>
+                            <p>Layanan konsultasi medis harian dan pemeriksaan rutin untuk segala usia.</p>
+                            <button class="btn-text">Lihat Detail &rarr;</button>
+                        </div>
+                    </article>
+                    <article class="service-card" data-category="anak">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1581594632702-52c4ca3df3cc?auto=format&fit=crop&q=80&w=400" alt="Poli Anak">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">🧸</div>
+                            <h3>Poli Anak</h3>
+                            <p>Perawatan khusus untuk tumbuh kembang buah hati dengan pendekatan yang ramah.</p>
+                            <button class="btn-text">Lihat Detail &rarr;</button>
+                        </div>
+                    </article>
+                    <article class="service-card" data-category="ibu">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1531983412531-1f49a365ffed?auto=format&fit=crop&q=80&w=400" alt="Kesehatan Ibu">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">🤱</div>
+                            <h3>Kesehatan Ibu</h3>
+                            <p>Layanan kehamilan, persalinan, dan konsultasi kesehatan reproduksi terpercaya.</p>
+                            <button class="btn-text">Lihat Detail &rarr;</button>
+                        </div>
+                    </article>
+                    <article class="service-card" data-category="gigi">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=400" alt="Poli Gigi">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">🦷</div>
+                            <h3>Poli Gigi</h3>
+                            <p>Perawatan estetika dan kesehatan gigi menggunakan peralatan medis modern.</p>
+                            <button class="btn-text">Lihat Detail &rarr;</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="doctors" class="doctors">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Tenaga Medis Ahli</h2>
+                    <p>Dokter-dokter spesialis kami siap memberikan diagnosis tepat dan penanganan terbaik.</p>
+                </div>
+                <div class="doctor-list">
+                    <article class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=400" alt="dr. Andi Pratama">
+                        </div>
+                        <div class="doctor-info">
+                            <h3>dr. Andi Pratama</h3>
+                            <span class="specialty">Dokter Umum</span>
+                            <div class="schedule">
+                                <span>📅 Senin - Jumat</span>
+                                <span>⏰ 08.00 - 14.00</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline">Buat Janji</button>
+                        </div>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg?auto=compress&cs=tinysrgb&w=400" alt="drg. Citra Lestari">
+                        </div>
+                        <div class="doctor-info">
+                            <h3>drg. Citra Lestari</h3>
+                            <span class="specialty">Dokter Gigi</span>
+                            <div class="schedule">
+                                <span>📅 Senin, Rabu, Jumat</span>
+                                <span>⏰ 15.00 - 20.00</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline">Buat Janji</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="queue-checker">
+            <div class="container">
+                <div class="queue-wrapper">
+                    <div class="queue-info">
+                        <h2>Cek Status Antrean <span>Real-time</span></h2>
+                        <p>Masukkan nomor pendaftaran Anda untuk melihat estimasi waktu pelayanan.</p>
+                        <div class="queue-form">
+                            <input type="text" id="queue-input" placeholder="REG-2026-XXX">
+                            <button id="btn-check-queue" class="btn btn-accent">Cek Sekarang</button>
+                        </div>
+                    </div>
+                    <div id="queue-result" class="queue-result">
+                        <div class="empty-state">
+                            <div class="pulse-icon">?</div>
+                            <p>Status antrean Anda akan muncul di sini</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="registration" class="registration">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Pendaftaran Online</h2>
+                    <p>Proses cepat dan mudah. Hindari antrean panjang dengan mendaftar secara online.</p>
+                </div>
+                <div class="form-container">
+                    <div class="form-progress">
+                        <div class="progress-step active" data-step="1">Info Pasien</div>
+                        <div class="progress-step" data-step="2">Pilih Layanan</div>
+                    </div>
+                    <form id="reg-form" class="multi-step-form">
+                        <div class="step-content active" id="step-1">
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap</label>
+                                <input type="text" id="name" name="name" placeholder="Nama sesuai KTP" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Nomor WhatsApp</label>
+                                <input type="tel" id="phone" name="phone" placeholder="0812XXXXXXXX" required>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-block next-step">Lanjut Ke Layanan &rarr;</button>
+                        </div>
+                        <div class="step-content" id="step-2">
+                            <div class="form-group">
+                                <label for="poli">Pilih Poliklinik</label>
+                                <select id="poli" name="poli" required>
+                                    <option value="" disabled selected>-- Pilih Layanan --</option>
+                                    <option value="umum">Poli Umum</option>
+                                    <option value="gigi">Poli Gigi</option>
+                                    <option value="anak">Poli Anak</option>
+                                    <option value="ibu">Kesehatan Ibu</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Tanggal Kunjungan</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-btns">
+                                <button type="button" class="btn btn-secondary prev-step">Kembali</button>
+                                <button type="submit" class="btn btn-accent">Konfirmasi Pendaftaran</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="form-success" class="success-msg" style="display:none;">
+                        <div class="success-animation">
+                            <div class="check-icon"></div>
+                        </div>
+                        <h3>Pendaftaran Berhasil!</h3>
+                        <p>Nomor Antrean Anda:</p>
+                        <div class="ticket">
+                            <span id="assigned-queue">REG-2026-088</span>
+                        </div>
+                        <p>Simpan nomor ini untuk melakukan pengecekan status antrean.</p>
+                        <button class="btn btn-primary btn-sm reset-form">Daftar Lagi</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <div class="logo">
+                    <a href="#" style="color: white;">Klinik<span>Sehat</span></a>
+                </div>
+                <p>Memberikan pelayanan kesehatan terpadu dan berkualitas untuk masyarakat sejak tahun 2010.</p>
+                <div class="social-links">
+                    <span>IG</span><span>FB</span><span>TW</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Navigasi</h4>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#services">Layanan Medis</a></li>
+                    <li><a href="#doctors">Jadwal Dokter</a></li>
+                    <li><a href="#registration">Pendaftaran</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Hubungi Kami</h4>
+                <p>📍 Jl. Kesehatan No. 123, Jakarta</p>
+                <p>📧 info@kliniksehat.id</p>
+                <p>📞 (021) 1234 5678</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Klinik Kesehatan Umum Terpadu. Purely Vanilla & CSS.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
