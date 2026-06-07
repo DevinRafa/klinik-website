@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-black);
   background-color: var(--bg-white);
   line-height: 1.6;
@@ -51,7 +51,7 @@ body {
 }
 
 .logo {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: #000000;
@@ -128,7 +128,7 @@ body {
 }
 
 .hero-text-group h1 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 56.8px;
   font-weight: 700;
   line-height: 1.1;
@@ -184,7 +184,7 @@ body {
   font-size: 14px;
   color: var(--text-black);
   width: 100%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .btn-search-icon {
@@ -306,17 +306,20 @@ body {
   padding: 40px;
   border-radius: 20px;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 .card.active {
   background-color: var(--primary-color);
   color: white;
 }
-.card.active h3, .card.active p {
+.card.active h3,
+.card.active p {
   color: white;
 }
 .card h3 {
@@ -337,12 +340,14 @@ body {
   display: flex;
   gap: 20px;
 }
-.kiri, .kanan {
+.kiri,
+.kanan {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.kiri-item, .kanan-item {
+.kiri-item,
+.kanan-item {
   width: 262px;
   height: 308px;
   border-radius: 20px;
@@ -378,7 +383,7 @@ body {
   background: white;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
 }
 
 /* Footer */
@@ -394,7 +399,7 @@ body {
 .footer-bottom {
   text-align: center;
   padding-top: 40px;
-  border-top: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
   margin-top: 40px;
 }
 
@@ -402,11 +407,13 @@ body {
   .container {
     padding: 0 40px;
   }
-  .hero-container, .section-container {
+  .hero-container,
+  .section-container {
     flex-direction: column;
     text-align: center;
   }
-  .hero-text-group p, .hero-search-wrapper {
+  .hero-text-group p,
+  .hero-search-wrapper {
     margin-left: auto;
     margin-right: auto;
   }
@@ -420,7 +427,8 @@ body {
 }
 
 @media (max-width: 768px) {
-  .nav-links, .nav-actions {
+  .nav-links,
+  .nav-actions {
     display: none;
   }
   .ikon-menu {
