@@ -310,49 +310,95 @@ body {
 
 /* Spesialisasi Section */
 .spesialisasi {
-  background-color: #f8fafc;
-  padding: 80px 0;
+  background-color: #f9fcff;
+  padding: 100px 0;
 }
 .text-center {
   text-align: center;
 }
 .section-header h2 {
-  font-size: 48px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
   color: var(--text-dark);
-  margin-bottom: 15px;
+  margin-bottom: 16px;
+}
+.section-header p {
+  color: #000;
+  font-size: 16px;
 }
 .specialty-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-top: 50px;
+  column-gap: 80px;
+  row-gap: 50px;
+  margin-top: 100px;
+  justify-items: center;
 }
 .card {
   background-color: var(--bg-white);
-  padding: 40px;
-  border-radius: 20px;
+  padding: 40px 11px;
+  border-radius: 26px;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  width: 286.63px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  box-shadow: 0px 6.478px 27.448px rgba(0, 134, 255, 0.1);
+  transition: transform 0.3s;
 }
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 .card.active {
-  background-color: var(--primary-color);
+  background-color: #3d9df1;
   color: white;
 }
-.card.active h3, .card.active p {
-  color: white;
+.icon-wrapper {
+  width: 113.35px;
+  height: 113.35px;
+  background-color: #f6f9fe;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card.active .icon-wrapper {
+  background-color: #ecf6ff;
+  border-radius: 26px;
+}
+.icon-wrapper img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+.icon-wrapper img.full-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
 }
 .card h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
-  color: var(--text-dark);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 25.91px;
+  font-weight: 700;
+  margin: 0;
+  color: #000;
+}
+.card.active h3 {
+  color: white;
 }
 .card p {
-  font-size: 16px;
-  color: var(--text-muted);
+  font-family: 'Inter', sans-serif;
+  font-size: 19.43px;
+  color: #757575;
+  margin: 0;
+  line-height: 1.2;
+}
+.card.active p {
+  color: white;
 }
 
 /* Keunggulan Section */
