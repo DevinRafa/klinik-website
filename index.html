@@ -4,47 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Go Sehat - Konsultasi Medis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <nav class="navbar">
       <div class="container navbar-container">
-        <div class="logo">Go Sehat</div>
+        <div class="logo">Go <span>Sehat</span></div>
         <button id="tombol-menu" class="ikon-menu">☰</button>
-        <ul class="nav-links daftar-tautan">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#layanan">Layanan</a></li>
-          <li><a href="#spesialisasi">Spesialisasi</a></li>
-          <li><a href="#keunggulan">Keunggulan</a></li>
+        <ul class="nav-links">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#spesialisasi">Spesialis</a></li>
+          <li><a href="#layanan">Dokter</a></li>
+          <li><a href="#hero">Konsultasi</a></li>
+          <li><a href="#login">Login</a></li>
         </ul>
-        <button class="btn-primary btn-login">Login</button>
+        <div class="nav-actions">
+          <button class="btn-primary">Pesan Sekarang</button>
+        </div>
       </div>
     </nav>
 
     <header class="hero" id="hero">
       <div class="container hero-container">
         <div class="hero-content">
-          <h1>Dapatkan Ahli Konsultasi Medis</h1>
-          <p>
-            Dokter kami memberikan saran dan konsultasi medis ahli. Hubungi tim
-            kami untuk berdiskusi.
-          </p>
-          <div class="search-bar">
-            <input
-              type="text"
-              id="input-pencarian"
-              placeholder="Cari dokter, spesialisasi..."
-            />
-            <button type="button" id="tombol-cari">Cari</button>
+          <div class="hero-text-group">
+            <h1>Dapatkan Ahli <span>Konsultasi Medis</span></h1>
+            <p>
+              Dokter kami memberikan saran dan konsultasi medis ahli. Hubungi tim
+              kami untuk berdiskusi.
+            </p>
+          </div>
+          <div class="hero-search-wrapper">
+            <div class="search-box">
+              <div class="search-input-field">
+                <span class="icon-location">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 12.75C13.5188 12.75 14.75 11.5188 14.75 10C14.75 8.48122 13.5188 7.25 12 7.25C10.4812 7.25 9.25 8.48122 9.25 10C9.25 11.5188 10.4812 12.75 12 12.75Z" stroke="#757575" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M19.25 10C19.25 16 12 21.25 12 21.25C12 21.25 4.75 16 4.75 10C4.75 8.07718 5.51384 6.23311 6.87348 4.87348C8.23311 3.51384 10.0772 2.75 12 2.75C13.9228 2.75 15.7669 3.51384 17.1265 4.87348C18.4862 6.23311 19.25 8.07718 19.25 10Z" stroke="#757575" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <input type="text" placeholder="Cari dokter di lokasi Anda" />
+              </div>
+              <button class="btn-search-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 22L20 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="search-box-shadow"></div>
           </div>
         </div>
-        <div class="hero-image">
-          <!-- GAMBAR UTAMA HERO -->
-          <img
-            src="dokter-utama.jpg"
-            alt="Dokter Utama Go Sehat"
-            class="doctor-main"
-          />
+        <div class="hero-visual">
+          <div class="visual-stack">
+            <div class="circle-decoration">
+              <svg width="564" height="564" viewBox="0 0 564 564" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="282" cy="282" r="282" fill="#F0F8FF"/>
+                <circle cx="282" cy="282" r="205" fill="white"/>
+              </svg>
+            </div>
+            <div class="doctor-image-wrapper">
+              <img src="https://www.figma.com/api/mcp/asset/5c034a40-bef1-4381-a961-c62edb827d46" alt="Beautiful young female doctor" class="doctor-main-img" />
+            </div>
+          </div>
         </div>
       </div>
     </header>
