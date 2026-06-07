@@ -403,29 +403,67 @@ body {
 
 /* Keunggulan Section */
 .keunggulan {
-  padding: 80px 0;
+  padding: 100px 0;
+}
+.keunggulan-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 112px;
 }
 .collage-asimetris {
   display: flex;
-  gap: 20px;
+  gap: 27px;
 }
-.kiri, .kanan {
+.collage-asimetris .kiri,
+.collage-asimetris .kanan {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 26px;
 }
-.kiri-item, .kanan-item {
+.collage-asimetris .kanan {
+  margin-top: 98px;
+}
+.collage-item {
   width: 262px;
   height: 308px;
-  border-radius: 20px;
+  border-radius: 44px;
   object-fit: cover;
+  background-color: #cbd5e1;
 }
-.subtitle {
-  font-size: 14px;
+.collage-item.img-1 { object-position: center; }
+.collage-item.img-2 { object-position: center; }
+.collage-item.img-3 { object-position: 85% center; } /* Memperbaiki dokter menunjuk agar lebih tengah */
+.collage-item.img-4 { object-position: center; }
+.keunggulan-content {
+  max-width: 490px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.keunggulan-title {
+  display: flex;
+  flex-direction: column;
+}
+.keunggulan-title .title-blue {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--primary-color);
+  line-height: 1;
+}
+.keunggulan-title .title-dark {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-top: 5px;
+}
+.keunggulan-content p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
   color: var(--text-muted);
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  display: block;
+  line-height: 1.6;
 }
 
 /* Testimoni Section */
