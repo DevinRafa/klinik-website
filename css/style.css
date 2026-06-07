@@ -255,31 +255,57 @@ body {
   object-position: top center;
 }
 
-/* Praktek Medis Section */
+/* Praktek Medis Section (Hubungi Kami) */
 .praktek-medis {
-  padding: 80px 0;
+  padding: 100px 0;
 }
-.section-container {
+.hubungi-kami-container {
   display: flex;
   align-items: center;
-  gap: 60px;
+  justify-content: center;
+  gap: 150px;
 }
-.section-content h2 {
-  font-size: 36px;
-  color: var(--text-dark);
-  margin-bottom: 24px;
-  line-height: 1.3;
-}
-.section-content p {
-  color: var(--text-muted);
-  margin-bottom: 30px;
-  font-size: 18px;
-}
-.doctors-team {
-  width: 100%;
+.hubungi-kami-image {
+  flex: 0 0 547px;
   height: 422px;
-  border-radius: 20px;
+}
+.hubungi-kami-image .doctors-team {
+  width: 547px;
+  height: 422px;
+  border-radius: 56px;
   object-fit: cover;
+}
+.hubungi-kami-content {
+  max-width: 490px;
+  flex: 1;
+}
+.hubungi-kami-content h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 26px;
+  line-height: 1.2;
+}
+.hubungi-kami-content p {
+  color: var(--text-muted);
+  margin-bottom: 26px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.btn-hubungi {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.btn-hubungi:hover {
+  background-color: var(--primary-hover);
 }
 
 /* Spesialisasi Section */
