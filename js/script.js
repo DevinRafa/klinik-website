@@ -7,6 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
     tombolMenu.addEventListener("click", function () {
       menuNavigasi.classList.toggle("tampil");
     });
+
+    // Close menu when a link is clicked
+    const tautanNavigasi = menuNavigasi.querySelectorAll("a");
+    tautanNavigasi.forEach(tautan => {
+      tautan.addEventListener("click", () => {
+        menuNavigasi.classList.remove("tampil");
+      });
+    });
   }
 
   // Specialty Cards Selection
