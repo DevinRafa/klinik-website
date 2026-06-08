@@ -165,12 +165,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const inputPencarian = document.querySelector(".search-input-field input");
 
   if (tombolCari && inputPencarian) {
-    tombolCari.addEventListener("click", function () {
-      if (inputPencarian.value.trim() === "") {
-        alert("Masukkan kata kunci pencarian terlebih dahulu.");
-      } else {
-        alert("Mencari: " + inputPencarian.value);
-      }
+    tombolCari.addEventListener("click", function (e) {
+      e.preventDefault();
+      alert("Terima kasih! Fitur pencarian lokasi saat ini sedang dalam tahap pengembangan.");
     });
   }
 });
