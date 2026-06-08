@@ -533,13 +533,19 @@ body {
   display: none; /* Chrome, Safari, Opera */
 }
 .testimoni-card {
-  min-width: 249px;
+  width: 249px;
+  flex-shrink: 0;
   background: white;
   padding: 39px 18px;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
   gap: 37px;
+}
+.testimoni-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .quote-icon {
   width: 30px;
