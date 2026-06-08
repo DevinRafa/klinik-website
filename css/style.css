@@ -801,22 +801,60 @@ body {
     padding: 40px 0;
   }
   .specialty-grid {
-    display: flex;
-    gap: 20px;
+    position: relative;
+    height: 420px;
     margin-top: 60px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding-bottom: 20px;
-    scrollbar-width: none; /* Firefox */
-    scroll-snap-type: x mandatory;
-  }
-  .specialty-grid::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+    display: block;
+    overflow: hidden;
+    padding-bottom: 0;
   }
   .card {
-    flex: 0 0 286.63px;
-    padding: 30px 20px;
-    scroll-snap-align: start;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    opacity: 0;
+    z-index: 1;
+    width: 286.63px;
+    margin: 0;
+    transition: all 0.4s ease;
+    cursor: grab;
+    user-select: none;
+    pointer-events: none;
+    touch-action: pan-y;
+  }
+  .card:active {
+    cursor: grabbing;
+  }
+  .card.mobile-active {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+    z-index: 3;
+    pointer-events: auto;
+  }
+  
+  /* Specialty Dots (Mobile Carousel Indicators) */
+  .specialty-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 5;
+  }
+  .specialty-dots .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #cbd5e1;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .specialty-dots .dot.active {
+    background-color: #3d9df1;
+    width: 24px;
+    border-radius: 4px;
   }
   .hubungi-kami-content h2, .keunggulan-title .title-blue, .keunggulan-title .title-dark {
     font-size: 28px;
