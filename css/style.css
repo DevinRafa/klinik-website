@@ -713,8 +713,8 @@ body {
     padding: 60px 0;
   }
   .specialty-grid {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
     row-gap: 30px;
     margin-top: 60px;
   }
@@ -801,14 +801,22 @@ body {
     padding: 40px 0;
   }
   .specialty-grid {
-    grid-template-columns: 1fr;
-    row-gap: 20px;
-    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    margin-top: 60px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+    scrollbar-width: none; /* Firefox */
+    scroll-snap-type: x mandatory;
+  }
+  .specialty-grid::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
   }
   .card {
-    width: 100%;
-    max-width: 100%;
+    flex: 0 0 286.63px;
     padding: 30px 20px;
+    scroll-snap-align: start;
   }
   .hubungi-kami-content h2, .keunggulan-title .title-blue, .keunggulan-title .title-dark {
     font-size: 28px;
