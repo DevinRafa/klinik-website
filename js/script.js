@@ -170,4 +170,23 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Terima kasih! Fitur pencarian lokasi saat ini sedang dalam tahap pengembangan.");
     });
   }
+
+  // Footer Dummy Links Logic
+  const tautanDummy = document.querySelectorAll(".dummy-link");
+  tautanDummy.forEach(tautan => {
+    tautan.addEventListener("click", function (e) {
+      e.preventDefault();
+      const namaMenu = this.textContent;
+      alert(`Terima kasih! Halaman "${namaMenu}" saat ini sedang dalam tahap pengembangan.`);
+    });
+  });
+
+  // Social Media Dummy Logic
+  const tautanSosmed = document.querySelectorAll(".dummy-social");
+  tautanSosmed.forEach(tautan => {
+    tautan.addEventListener("click", function (e) {
+      e.preventDefault();
+      alert("Nantikan kami! Sosial media Go Sehat akan segera hadir.");
+    });
+  });
 });
